@@ -1,107 +1,97 @@
-/* ======= ESTILOS GENERALES ======= */
+/* ======== ESTILO GLOBAL EPICO ======== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Blanco predominante */
-    color: #0a2a66; /* Azul oscuro elegante */
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    color: #0a2a66;
     margin: 0;
     padding: 0;
 }
 
-/* ======= ENCABEZADO ======= */
-header {
-    background-color: #0a2a66; 
-    color: white;
-    padding: 25px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-
-/* ======= NAV ======= */
+/* NAV */
 nav {
-    text-align: center;
-    margin: 25px 0;
+    background: #0a2a66;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 nav a {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 10px;
-    text-decoration: none;
-    background-color: #0a2a66; 
     color: white;
-    border-radius: 10px;
+    text-decoration: none;
     font-weight: bold;
-    transition: transform 0.25s ease, background-color 0.25s ease;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: transform .3s ease, background .3s ease;
+    background: #0a2a66;
+    border: 2px solid white;
 }
 
-/* ANIMACIÓN DE ZOOM SUAVE */
 nav a:hover {
-    transform: scale(1.08);
-    background-color: #08357a;
+    transform: scale(1.12);
+    background: white;
+    color: #0a2a66;
 }
 
-/* ======= SECCIÓN PRINCIPAL ======= */
-main {
+/* TITULOS EPICOS */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #0a2a66;
+    text-transform: uppercase;
+    animation: titleFloat 3s infinite ease-in-out alternate;
+}
+
+@keyframes titleFloat {
+    from { transform: translateY(0); }
+    to { transform: translateY(-6px); }
+}
+
+/* BOTONES EPICOS */
+button, .btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: #0a2a66;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform .3s ease, background .3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.12);
+    background: #bcd7ff;
+    color: #0a2a66;
+}
+
+/* TABLAS */
+table {
     width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px;
-}
-
-/* ======= IMÁGENES CON ANIMACIONES DIFERENTES ======= */
-
-/* Imagen 1: suave fade + zoom */
-.img-uno {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-    display: block;
     margin: 20px auto;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-}
-.img-uno:hover {
-    transform: scale(1.08);
-    opacity: 0.9;
+    border-collapse: collapse;
 }
 
-/* Imagen 2: deslizamiento */
-.img-dos {
+td, th {
+    padding: 12px;
+    border: 2px solid #0a2a66;
+    text-align: center;
+}
+
+/* IMAGENES */
+img {
     width: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-    display: block;
-    margin: 20px auto;
-    transition: transform 0.4s ease;
-}
-.img-dos:hover {
-    transform: translateY(-10px);
+    border-radius: 10px;
+    border: 3px solid #0a2a66;
+    transition: .4s ease;
 }
 
-/* Imagen 3: giro suave */
-.img-tres {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-    display: block;
-    margin: 20px auto;
-    transition: transform 0.4s ease;
-}
-.img-tres:hover {
-    transform: rotate(3deg);
-}
-
-/* ======= PIE DE PAGINA ======= */
+/* FOOTER */
 footer {
+    background: #0a2a66;
+    color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-    background-color: #0a2a66;
-    color: white;
-    font-size: 1.1em;
-    letter-spacing: 1px;
+    margin-top: 30px;
 }

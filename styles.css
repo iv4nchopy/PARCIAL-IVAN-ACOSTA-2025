@@ -1,148 +1,107 @@
-/* =======================
-   ESTILO GENERAL BLANCO + AZUL
-   ======================= */
-
+/* ======= ESTILOS GENERALES ======= */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;     /* Blanco */
-    color: #003366;          /* Azul oscuro */
+    background-color: #ffffff; /* Blanco predominante */
+    color: #0a2a66; /* Azul oscuro elegante */
+    margin: 0;
+    padding: 0;
 }
 
-/* NAV */
-nav {
-    background: #0055cc;     /* Azul fuerte */
-    padding: 15px;
+/* ======= ENCABEZADO ======= */
+header {
+    background-color: #0a2a66; 
+    color: white;
+    padding: 25px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+/* ======= NAV ======= */
+nav {
+    text-align: center;
+    margin: 25px 0;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #cce6ff;
-}
-
-/* TÍTULOS */
-h1, h2, h3 {
-    text-align: center;
-    color: #003366;
-    animation: fade 1.3s ease;
-}
-
-@keyframes fade {
-    from { opacity: 0; transform: translateY(-10px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-/* BOTONES */
-.boton-animado {
     display: inline-block;
-    padding: 12px 20px;
-    margin: 12px;
-    background: #0066ff;
-    color: white;
-    border-radius: 8px;
+    padding: 12px 25px;
+    margin: 10px;
     text-decoration: none;
+    background-color: #0a2a66; 
+    color: white;
+    border-radius: 10px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
-.boton-animado:hover {
-    background: #3385ff;
-    transform: scale(1.07);
+/* ANIMACIÓN DE ZOOM SUAVE */
+nav a:hover {
+    transform: scale(1.08);
+    background-color: #08357a;
 }
 
-/* TABLA */
-table {
+/* ======= SECCIÓN PRINCIPAL ======= */
+main {
     width: 90%;
-    margin: 30px auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 12px;
-    border: 2px solid #003366;
-}
-
-th {
-    background: #e6f0ff;
-}
-
-tr:nth-child(even) {
-    background: #f5f9ff;
-}
-
-/* GALERÍA */
-.galeria {
-    width: 90%;
+    max-width: 1100px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    padding: 25px;
 }
 
-.galeria-item {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    position: relative;
-}
+/* ======= IMÁGENES CON ANIMACIONES DIFERENTES ======= */
 
-/* Animaciones suaves y diferentes */
-.g1:hover { transform: scale(1.05); }
-.g2:hover { transform: rotate(2deg); }
-.g3:hover { filter: brightness(1.2); }
-.g4:hover { transform: translateY(-6px); }
-.g5:hover { transform: scale(1.08) rotate(-1deg); }
-.g6:hover { filter: contrast(1.3); }
-.g7:hover { transform: scale(1.04); }
-.g8:hover { filter: saturate(1.4); }
-
-/* DESCRIPCIÓN */
-.descripcion {
-    position: absolute;
-    bottom: 0;
+/* Imagen 1: suave fade + zoom */
+.img-uno {
     width: 100%;
-    padding: 8px;
-    background: rgba(0,51,102,0.85);
-    color: white;
-    opacity: 0;
-    transition: 0.4s ease;
-    text-align: center;
-}
-
-.galeria-item:hover .descripcion {
-    opacity: 1;
-}
-
-/* BLOG */
-.blog-section {
-    width: 85%;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
     margin: 20px auto;
-    background: #f0f6ff;
-    padding: 20px;
-    border-left: 5px solid #0055cc;
-    border-radius: 10px;
-    animation: slideUp 1.2s ease forwards;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.img-uno:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
 }
 
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+/* Imagen 2: deslizamiento */
+.img-dos {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.4s ease;
+}
+.img-dos:hover {
+    transform: translateY(-10px);
 }
 
-/* FOOTER */
+/* Imagen 3: giro suave */
+.img-tres {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.4s ease;
+}
+.img-tres:hover {
+    transform: rotate(3deg);
+}
+
+/* ======= PIE DE PAGINA ======= */
 footer {
-    background: #0055cc;
-    color: white;
     text-align: center;
-    padding: 15px;
-    font-weight: bold;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #0a2a66;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }

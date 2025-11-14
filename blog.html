@@ -2,54 +2,70 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Blog Profesional | Lewandowski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profesional - Robert Lewandowski</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .post {
-            max-width: 900px; margin: 40px auto;
-            padding: 20px; border-left: 4px solid #0a2a66;
-            opacity: 0; animation: slideUp 1.4s forwards ease-out;
-        }
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
 
-<body>
+<body class="light-theme">
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="galeria.html">Galería</a>
-    <a href="blog.html">Blog</a>
-</nav>
+    <!-- NAV -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-btn">Inicio</a>
+        <a href="perfil.html" class="nav-btn">Perfil Profesional</a>
+        <a href="galeria.html" class="nav-btn">Galería</a>
+        <a href="blog.html" class="nav-btn active">Blog</a>
+    </nav>
 
-<h1>Blog Profesional</h1>
+    <header class="page-header">
+        <h1 class="epic-title">Blog Profesional</h1>
+    </header>
 
-<section class="post">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2557WqiprvPPxvcvb22soo9LV8-zwBtgc6g&s">
-    <h2>Inicios en Polonia</h2>
-    <p>Lewandowski comenzó su carrera profesional en Znicz Pruszków...</p>
-    <a class="btn" target="_blank" href="https://en.wikipedia.org/wiki/Robert_Lewandowski">Leer más</a>
-</section>
+    <section class="blog-container">
 
-<section class="post">
-    <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/02/20/2c368b3b-1a01-4b7d-97ae-2e6ede2c9c97/lewy-gol-pu-os.JPG">
-    <h2>Era Dortmund</h2>
-    <p>Con Klopp, Lewandowski explotó en la Bundesliga...</p>
-    <a class="btn" target="_blank" href="https://www.bvb.de">Leer más</a>
-</section>
+        <!-- SECCIÓN 1 -->
+        <article class="blog-card slide-up">
+            <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/02/20/2c368b3b-1a01-4b7d-97ae-2e6ede2c9c97/lewy-gol-pu-os.JPG" 
+                 alt="Lewandowski Barcelona" class="blog-img">
 
-<section class="post">
-    <img src="https://www.fcbarcelona.com/photo-resources/2025/09/09/3f98839a-bac3-451e-9431-6d58b79588d5/09-Lewandowski.png?width=670&height=790">
-    <h2>FC Barcelona</h2>
-    <p>Su etapa más reciente, marcada por liderazgo y goles...</p>
-    <a class="btn" target="_blank" href="https://www.fcbarcelona.com">Leer más</a>
-</section>
+            <h2 class="blog-title">Etapa en Barcelona</h2>
+            <p class="blog-text">
+                Lewandowski llegó al FC Barcelona para aportar su enorme experiencia goleadora,
+                convirtiéndose rápidamente en una pieza clave del ataque culé.
+            </p>
+            <a href="https://www.fcbarcelona.com" class="blog-btn" target="_blank">Leer más</a>
+        </article>
 
-<footer>© 2025 — IVAN ACOSTA</footer>
+        <!-- SECCIÓN 2 — ACTUALIZADA CON TU FOTO NUEVA -->
+        <article class="blog-card slide-up">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuANepswyf7DxoU0dtX0QSUeFFI8FUt1VXkgqwVXgLXoSngvS7ZT9c9kBzCfGHWFQdHhHrBeFdgvh6dnfE1J48znDZYlMsefHkIgmNjg&s=10"
+                 alt="Lewandowski Dortmund" class="blog-img">
+
+            <h2 class="blog-title">Etapa en Dortmund</h2>
+            <p class="blog-text">
+                En el Borussia Dortmund se transformó en uno de los delanteros más temidos de Europa,
+                ganando títulos y mostrando una evolución explosiva.
+            </p>
+            <a href="https://www.bvb.de" class="blog-btn" target="_blank">Leer más</a>
+        </article>
+
+        <!-- SECCIÓN 3 -->
+        <article class="blog-card slide-up">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2557WqiprvPPxvcvb22soo9LV8-zwBtgc6g&s" 
+                 alt="Lewandowski Bayern" class="blog-img">
+
+            <h2 class="blog-title">Gloria en el Bayern</h2>
+            <p class="blog-text">
+                En el Bayern Munich alcanzó su prime, rompiendo récords históricos y dominando la Bundesliga por años.
+            </p>
+            <a href="https://fcbayern.com" class="blog-btn" target="_blank">Leer más</a>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 - Diseñado por <strong>IVAN ACOSTA</strong>
+    </footer>
+
 </body>
 </html>

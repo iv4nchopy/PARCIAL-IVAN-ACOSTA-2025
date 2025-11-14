@@ -1,164 +1,117 @@
-/* ---------------------------------------------
-   ESTILO GENERAL: Blanco + Azul
-----------------------------------------------*/
+/* =======================
+   ESTILO GENERAL BLANCO + AZUL
+   ======================= */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;       /* Predomina blanco */
-    color: #002b5b;                  /* Azul oscuro */
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;     /* Blanco */
+    color: #003366;          /* Azul oscuro */
 }
 
-/* --------------------------
-   MENÚ DE NAVEGACIÓN
----------------------------*/
-
+/* NAV */
 nav {
-    background-color: #004a99;      /* Azul fuerte */
-    padding: 15px 0;
+    background: #0055cc;     /* Azul fuerte */
+    padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 nav a {
     color: white;
-    margin: 0 20px;
-    font-weight: bold;
+    margin: 0 15px;
     text-decoration: none;
-    transition: 0.3s ease;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #b3d9ff;                /* Azul claro al hover */
+    color: #cce6ff;
 }
 
-/* --------------------------
-   TÍTULOS CON ANIMACIONES
----------------------------*/
-
+/* TÍTULOS */
 h1, h2, h3 {
     text-align: center;
     color: #003366;
-    margin-top: 20px;
-    animation: fadeIn 1.3s ease;
+    animation: fade 1.3s ease;
 }
 
-@keyframes fadeIn {
+@keyframes fade {
     from { opacity: 0; transform: translateY(-10px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* --------------------------
-   BOTONES ANIMADOS
----------------------------*/
-
+/* BOTONES */
 .boton-animado {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 12px 20px;
     margin: 12px;
-    background-color: #0066cc;
+    background: #0066ff;
     color: white;
-    text-decoration: none;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    animation: pop 1.5s infinite alternate ease-in-out;
-}
-
-@keyframes pop {
-    from { transform: scale(1); }
-    to   { transform: scale(1.06); }
 }
 
 .boton-animado:hover {
-    background-color: #3385ff;
-    transform: scale(1.12);
+    background: #3385ff;
+    transform: scale(1.07);
 }
 
-/* --------------------------
-   TABLAS
----------------------------*/
-
+/* TABLA */
 table {
     width: 90%;
-    margin: 25px auto;
+    margin: 30px auto;
     border-collapse: collapse;
 }
 
-table th, table td {
-    border: 2px solid #004a99;
+th, td {
     padding: 12px;
-    text-align: center;
+    border: 2px solid #003366;
 }
 
-table th {
-    background-color: #e6f0ff;   /* Azul muy claro */
-    color: #003366;
+th {
+    background: #e6f0ff;
 }
 
-table tr:nth-child(even) {
-    background-color: #f7faff;
+tr:nth-child(even) {
+    background: #f5f9ff;
 }
 
-/* --------------------------
-   ICONOS DE REDES
----------------------------*/
-
-.socials a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    background-color: #0066cc;
-    transition: 0.3s;
-}
-
-.socials a:hover {
-    background-color: #004a99;
-    transform: scale(1.15);
-}
-
-/* --------------------------
-   GALERÍA
----------------------------*/
-
+/* GALERÍA */
 .galeria {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    gap: 20px;
 }
 
 .galeria-item {
-    position: relative;
-    overflow: hidden;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    background-color: white;
-    padding: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    position: relative;
 }
 
-/* Animación diferente para cada imagen */
-.g1:hover { transform: rotate(2deg); }
-.g2:hover { transform: scale(1.08); }
+/* Animaciones suaves y diferentes */
+.g1:hover { transform: scale(1.05); }
+.g2:hover { transform: rotate(2deg); }
 .g3:hover { filter: brightness(1.2); }
 .g4:hover { transform: translateY(-6px); }
-.g5:hover { transform: scale(1.1) rotate(-2deg); }
+.g5:hover { transform: scale(1.08) rotate(-1deg); }
 .g6:hover { filter: contrast(1.3); }
-.g7:hover { transform: rotate(1deg) scale(1.05); }
+.g7:hover { transform: scale(1.04); }
 .g8:hover { filter: saturate(1.4); }
 
-/* Descripción aparece al hover */
+/* DESCRIPCIÓN */
 .descripcion {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px;
-    background: rgba(0,51,102,0.8);
+    padding: 8px;
+    background: rgba(0,51,102,0.85);
     color: white;
     opacity: 0;
     transition: 0.4s ease;
@@ -169,41 +122,27 @@ table tr:nth-child(even) {
     opacity: 1;
 }
 
-/* --------------------------
-   BLOG PROFESIONAL
----------------------------*/
-
+/* BLOG */
 .blog-section {
     width: 85%;
-    margin: 30px auto;
+    margin: 20px auto;
+    background: #f0f6ff;
     padding: 20px;
-    background-color: #f2f7ff;
-    border-left: 6px solid #004a99;
+    border-left: 5px solid #0055cc;
     border-radius: 10px;
     animation: slideUp 1.2s ease forwards;
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(25px); }
+    from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-.blog-section img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* --------------------------
-   PIE DE PÁGINA
----------------------------*/
-
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 12px;
-    background-color: #004a99;
+    background: #0055cc;
     color: white;
-    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
     font-weight: bold;
 }
-

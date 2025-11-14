@@ -2,45 +2,54 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Blog Profesional - Lewandowski</title>
+    <title>Blog Profesional | Lewandowski</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .post {
+            max-width: 900px; margin: 40px auto;
+            padding: 20px; border-left: 4px solid #0a2a66;
+            opacity: 0; animation: slideUp 1.4s forwards ease-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
+
 <body>
 
 <nav>
     <a href="index.html">Inicio</a>
-    <a href="perfil.html">Perfil Profesional</a>
+    <a href="perfil.html">Perfil</a>
     <a href="galeria.html">Galería</a>
     <a href="blog.html">Blog</a>
-    <a href="cv/CV_Lewandowski.pdf" download class="btn">Descargar CV</a>
 </nav>
 
 <h1>Blog Profesional</h1>
 
-<div class="blog-section">
-    <h2>Etapa en Borussia Dortmund</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2557WqiprvPPxvcvb22soo9LV8-zwBtgc6g&s" width="100%">
-    <p>Lewandowski se consolidó como uno de los mejores delanteros en Alemania durante su tiempo en Dortmund.</p>
-    <a class="btn" href="https://www.bvb.de/" target="_blank">Leer más</a>
-</div>
+<section class="post">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2557WqiprvPPxvcvb22soo9LV8-zwBtgc6g&s">
+    <h2>Inicios en Polonia</h2>
+    <p>Lewandowski comenzó su carrera profesional en Znicz Pruszków...</p>
+    <a class="btn" target="_blank" href="https://en.wikipedia.org/wiki/Robert_Lewandowski">Leer más</a>
+</section>
 
-<div class="blog-section">
-    <h2>Bayern Múnich</h2>
-    <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/02/20/2c368b3b-1a01-4b7d-97ae-2e6ede2c9c97/lewy-gol-pu-os.JPG" width="100%">
-    <p>En el Bayern alcanzó su máximo nivel, logrando récords históricos de goles.</p>
-    <a class="btn" href="https://fcbayern.com" target="_blank">Leer más</a>
-</div>
+<section class="post">
+    <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/02/20/2c368b3b-1a01-4b7d-97ae-2e6ede2c9c97/lewy-gol-pu-os.JPG">
+    <h2>Era Dortmund</h2>
+    <p>Con Klopp, Lewandowski explotó en la Bundesliga...</p>
+    <a class="btn" target="_blank" href="https://www.bvb.de">Leer más</a>
+</section>
 
-<div class="blog-section">
-    <h2>F.C. Barcelona</h2>
-    <img src="https://www.fcbarcelona.com/photo-resources/2025/09/09/3f98839a-bac3-451e-9431-6d58b79588d5/09-Lewandowski.png?width=670&height=790" width="100%">
-    <p>Desde 2022 es uno de los referentes ofensivos del Barcelona.</p>
-    <a class="btn" href="https://www.fcbarcelona.com" target="_blank">Leer más</a>
-</div>
+<section class="post">
+    <img src="https://www.fcbarcelona.com/photo-resources/2025/09/09/3f98839a-bac3-451e-9431-6d58b79588d5/09-Lewandowski.png?width=670&height=790">
+    <h2>FC Barcelona</h2>
+    <p>Su etapa más reciente, marcada por liderazgo y goles...</p>
+    <a class="btn" target="_blank" href="https://www.fcbarcelona.com">Leer más</a>
+</section>
 
-<footer>
-    © 2025 - IVAN ACOSTA
-</footer>
-
+<footer>© 2025 — IVAN ACOSTA</footer>
 </body>
 </html>
